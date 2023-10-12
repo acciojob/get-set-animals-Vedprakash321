@@ -1,5 +1,6 @@
+//complete this code
 class Animal {
-    constructor(species) {
+	constructor(species) {
         this._species = species;
     }
 
@@ -8,33 +9,33 @@ class Animal {
     }
 
     makeSound(sound) {
-        console.log(`The ${this.species} makes a sound`);
+                console.log(`The ${this.species} makes a ${sound} sound`);
+	}
+}
+
+class Dog extends Animal {
+	 purr() {
+        this.makeSound('purr');
     }
 }
 
 class Cat extends Animal {
-    constructor() {
-        super('Siamese');
-    }
-
-    purr() {
-        super.makeSound('purr');
+	bark() {
+        this.makeSound('woof');
     }
 }
 
-class Dog extends Animal {
-    constructor() {
-        super('Golden Retriever');
-    }
 
-    bark() {
-        super.makeSound('woof');
-    }
-}
-
-// Example usage:
-const cat = new Cat();
+const cat = new Cat('Siamese');
 cat.purr(); // Outputs: The Siamese makes a purr sound
 
-const dog = new Dog();
-dog.bark(); // Outputs: The Golden Retriever makes a woof sound
+const dog = new Dog('Golden Retriever');
+dog.bark(); // Outputs: The Gol
+
+
+
+
+// Do not change the code below this line
+window.Animal = Animal;
+window.Dog = Dog;
+window.Cat = Cat;
