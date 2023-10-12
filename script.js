@@ -23,7 +23,7 @@ class Dog extends Animal {
     }
 
     bark() {
-        console.log(`woof`);
+         this.makeSound('woof');
     }
 }
 
@@ -33,7 +33,7 @@ class Cat extends Animal {
     }
 
    purr() {
-        console.log(`purr`);
+         this.makeSound('purr');
     }
  }
 
