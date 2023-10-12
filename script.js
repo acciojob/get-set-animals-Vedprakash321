@@ -23,7 +23,7 @@ class Dog extends Animal {
     }
 
     bark() {
-         this.makeSound('The Golden Retriever makes a sound'');
+         this.makeSound("The Golden Retriever makes a sound");
     }
 }
 
@@ -33,7 +33,7 @@ class Cat extends Animal {
     }
 
    purr() {
-         this.makeSound('The Siamese makes a sound');
+         this.makeSound("The Siamese makes a sound");
     }
  }
 
